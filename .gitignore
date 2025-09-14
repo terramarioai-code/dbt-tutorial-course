@@ -3,3 +3,5 @@
 /logs
 logs
 .venv/
+# Ignore local dbt user config
+/.dbt/
