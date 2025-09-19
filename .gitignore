@@ -1,7 +1,26 @@
-/venv
-.user.yml
-/logs
-logs
+# Wirtualne środowisko Pythona
 .venv/
-# Ignore local dbt user config
-/.dbt/
+venv/
+
+# Pliki i katalogi dbt
+target/          # katalog z buildami
+dbt_packages/    # pobrane paczki dbt
+logs/            # logi dbt
+dbt_modules/     # gdyby ktoś używał starego systemu paczek
+
+# Konfiguracje lokalne (nie powinny iść do repo)
+user.yml
+profiles.yml
+/.dbt/           # lokalny katalog konfiguracyjny dbt
+
+# Systemowe / IDE
+.vscode/
+.idea/
+*.DS_Store
+*.log
+
+# Pliki tymczasowe
+*.gz
+*.zip
+*.tar
+*.tar.gz
